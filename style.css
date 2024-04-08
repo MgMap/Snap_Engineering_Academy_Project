@@ -109,7 +109,7 @@ header {
   
 /* nav bar ends */
 
-/* buttons */
+
 
 /* search Bar */
 
@@ -118,6 +118,7 @@ header {
   margin-top:100px;
   margin-left:70px;
 }
+/* buttons */
 .Make-buttons
 {
 
@@ -129,6 +130,10 @@ header {
   margin-left:70px;
 }
 
+.Color-buttons
+{
+  margin-left:70px
+}
 .Sort-button
 {
   margin-left:70px;
@@ -147,16 +152,17 @@ header {
     border: 1px solid #eeeeee;
     border-radius: 5px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    margin-bottom: 5vh;
+    margin-bottom: 2vh;
 }
 
 .card-content li{
+  color: #033871;
   list-style: none;
 }
 .card-content {
     padding: 20px;
     font-family: "Verdana";
-    color: #12197c;
+    color: #585858;
 }
 
 .card-content h2 {
@@ -194,7 +200,7 @@ button {
 
 /* CSS for SearchBar */
 .SearchBar {
-  margin-top: 20px;
+  margin-top: 100px;
   text-align: center;
 }
 #searchInput {
@@ -207,19 +213,6 @@ button {
 }
 #searchInput:focus {
   width: 400px;
-}
-#carList {
-  list-style-type: none;
-  padding: 0;
-  margin-top: 10px;
-  text-align: left;
-}
-#carList li {
-  padding: 5px 0;
-}
-#carList li:hover {
-  background-color: #f0f0f0;
-  cursor: pointer;
 }
 
 /* CSS for buttons */
@@ -239,4 +232,22 @@ button {
 
 .is-checked {
   background-color: #0056b3;
+}
+
+/* footer and form */
+.footer
+{
+  background-color: #cfcfcf;
+}
+.footer h2{
+  color:#000000;
+}
+
+button
+{
+  background-color: #0056b3;
+}
+
+button:hover{
+  background-color: #2fbf6d;
 }

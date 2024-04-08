@@ -20,9 +20,9 @@
       <div id="menu" class="fas fa-bars"></div>
       <nav class="navbar">
         <ul>
-          <li><a class="active" href="#home">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#contact">Contact</a></li>
+          <li><a id = "homeLink" href="#home">Home</a></li>
+          <li><a href="https://www.snapacademies.com/about">About</a></li>
+          <li><a href="mailto:minaungpaing.pp@gmail.com">Contact</a></li>
         </ul>
       </nav>
     </header>
@@ -55,7 +55,6 @@
       <button class = "btn" >Audi</button>
       <button class = "btn" >Jeep</button>
       <button class = "btn" >Mahindra</button>
-      <button class = "btn" >Porsche</button>
     </div>
 
     <div class="Year-buttons">
@@ -69,7 +68,18 @@
       <button class = "btn" data-range=2016>2016-2017</button>
       <button class = "btn" data-range=2018>2018-2019</button>
       <button class = "btn" data-range=2020>2020-2021</button>
-      <button class = "btn" data-range=2022>2022-2023</button>
+    </div>
+
+    <div class="Color-buttons">
+      <h1>Filter by Color</h1>
+      <button class = "btn is-checked">All</button>
+      <button class = "btn" >White</button>
+      <button class = "btn" >Black</button>
+      <button class = "btn" >Grey</button>
+      <button class = "btn" >Silver</button>
+      <button class = "btn" >Red</button>
+      <button class = "btn" >Blue</button>
+      <button class = "btn" >Brown</button>
     </div>
 
     <div class="Sort-button">
@@ -91,13 +101,38 @@
           <li>Bullet Point 1</li>
           <li>Bullet Point 2</li>
           <li>Bullet Point 3</li>
+          <li>Bullet Point 4</li>
+          <li>Bullet Point 5</li>
+          <li>Bullet Point 6</li>
+
         </ul>
       </div>
     </div>
 
     <div class="footer">
-      <button onclick="quoteAlert();">Get A Quote!</button>
-      <button onclick="removeLastCard();">Remove A Card!</button>
+      
+
+<form id="addCarForm">
+  <h2>Add Car</h2>
+    <label for="name">Name:</label><br>
+    <input type="text" id="name" name="name"><br>
+    <label for="make">Make:</label><br>
+    <input type="text" id="make" name="make"><br>
+    <label for="year">Year:</label><br>
+    <input type="number" id="year" name="year"><br>
+    <label for="mileage">Mileage:</label><br>
+    <input type="text" id="mileage" name="mileage"><br>
+    <label for="price">Price:</label><br>
+    <input type="number" id="price" name="price"><br>
+    <label for="kilometer">Kilometer:</label><br>
+    <input type="number" id="kilometer" name="kilometer"><br>
+    <label for="color">Color:</label><br>
+    <input type="text" id="color" name="color"><br>
+    <label for="img">Image URL:</label><br>
+    <input type="text" id="img" name="img"><br><br>
+    <button type="button" onclick="addCar()">Add Car</button>
+</form>
+
     </div>
   </body>
 </html>

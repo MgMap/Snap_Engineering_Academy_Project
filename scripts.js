@@ -45,6 +45,16 @@ function filterByMake(Cars, make) {
     }
 }
 
+function filterByColor(Cars, color) {
+    if (color === "All") {
+        return Cars;
+    } else {
+        return Cars.filter(function(car) {
+            return car.color === color;
+        });
+    }
+}
+
 function filterByYear(Cars, min_year)
 {
     min_year = parseInt(min_year);
@@ -123,6 +133,10 @@ function showCards()
     const make = button_clicked.querySelector(".is-checked").textContent;
     display_cars = filterByMake(Cars, make);
 
+    const button_clicked_color = document.querySelector(".Color-buttons")
+    const color = button_clicked_color.querySelector(".is-checked").textContent;
+    display_cars = filterByColor(display_cars, color);
+
     const button_clicked_year = document.querySelector(".Year-buttons .is-checked").getAttribute('data-range');
     display_cars = filterByYear(display_cars,button_clicked_year);
 
@@ -163,6 +177,10 @@ function editCardContent(card, newCar, newImageURL) {
     cardDec[0].textContent = `Make: ${newCar.make}`;
     cardDec[1].textContent = `Mileage: ${newCar.mileage}`;
     cardDec[2].textContent = `Color: ${newCar.color}`;
+    cardDec[3].textContent = `Year: ${newCar.year}`;
+    cardDec[4].textContent = `Kilometer: ${newCar.kilometer}`;
+    cardDec[5].textContent = `Price: ${newCar.price} $`;
+
     // You can use console.log to help you debug!
     // View the output by right clicking on your website,
     // select "Inspect", then click on the "Console" tab
@@ -198,6 +216,16 @@ makeButtons.forEach(function(button) {
     });
 });
 
+let colorButtons = document.querySelectorAll(".Color-buttons button");
+colorButtons.forEach(function(button) {
+    button.addEventListener('click', function() {
+        document.querySelector('.Color-buttons .is-checked').classList.remove('is-checked');
+        button.classList.add('is-checked');
+        console.log("hi how are you");
+        showCards(); // Call showCards again to refresh
+    });
+});
+
 let yearButtons = document.querySelectorAll(".Year-buttons button");
 yearButtons.forEach(function(button) {
     button.addEventListener('click', function() {
@@ -216,4 +244,48 @@ SortButtons.forEach(function(button) {
         console.log("hi how are you3");
         showCards(); // Call showCards again to refresh
     });
+});
+
+window.addCar= function() {
+    // Get form data
+    const name = document.getElementById("name").value;
+    const make = document.getElementById("make").value;
+    const year = parseInt(document.getElementById("year").value);
+    const mileage = document.getElementById("mileage").value;
+    const price = parseInt(document.getElementById("price").value);
+    const kilometer = parseInt(document.getElementById("kilometer").value);
+    const color = document.getElementById("color").value;
+    const img = document.getElementById("img").value;
+
+    // Check if any field is empty
+    if (name === "" || make === "" || year === "" || mileage === "" || price === "" || kilometer === "" || color === "") {
+        alert("Please fill in all fields");
+        return;
+    }
+    // Create car object
+    const newCar = {
+        name: name,
+        make: make,
+        year: year,
+        mileage: mileage,
+        price: price,
+        kilometer: kilometer,
+        color: color,
+        img: img
+    };
+
+    // Update the array with the new car data
+    Cars.push(newCar);
+
+    // Log the updated array
+    console.log("Updated Cars array:", Cars);
+
+    // Reset the form
+    document.getElementById("addCarForm").reset();
+    showCards();
+}
+
+document.getElementById("homeLink").addEventListener("click", function(event) {
+    event.preventDefault(); // Prevent the default behavior of scrolling to the anchor
+    window.scrollTo({ top: 0, behavior: 'smooth' }); // Scroll to the top of the page smoothly
 });
