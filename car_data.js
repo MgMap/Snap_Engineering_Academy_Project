@@ -11,7 +11,7 @@ let cars = [
   {
     name: "Maruti Suzuki Swift DZire VDI",
     make: "Maruti Suzuki",
-    year: 2014,
+    year: 2006,
     mileage: "21.14 kmpl",
     price: 450000,
     kilometer: 75000,
@@ -144,33 +144,6 @@ let cars = [
     color: "Red"
   },
   {
-    name: "Maruti Suzuki Alto 800 LXi (O)",
-    make: "Maruti Suzuki",
-    year: 2019,
-    mileage: "24.52 kmpl",
-    price: 449000,
-    kilometer: 3583,
-    color: "Grey"
-  },
-  {
-    name: "Maruti Suzuki Baleno Alpha Automatic",
-    make: "Maruti Suzuki",
-    year: 2018,
-    mileage: "23.0 kmpl",
-    price: 894999,
-    kilometer: 21365,
-    color: "Grey"
-  },
-  {
-    name: "Maruti Suzuki Wagon R ZXi 1.2 AMT",
-    make: "Maruti Suzuki",
-    year: 2020,
-    mileage: "19.7 kmpl",
-    price: 699000,
-    kilometer: 30777,
-    color: "White"
-  },
-  {
     name: "Hyundai Creta 1.6 E Petrol",
     make: "Hyundai",
     year: 2016,
@@ -216,24 +189,6 @@ let cars = [
     price: 999000,
     kilometer: 27464,
     color: "Blue"
-  },
-  {
-    name: "Maruti Suzuki Alto LXi CNG",
-    make: "Maruti Suzuki",
-    year: 2019,
-    mileage: "20.3 kmpl",
-    price: 370000,
-    kilometer: 47377,
-    color: "Grey"
-  },
-  {
-    name: "Maruti Suzuki Ritz Zxi BS-IV",
-    make: "Maruti Suzuki",
-    year: 2013,
-    mileage: "21.4 kmpl",
-    price: 325000,
-    kilometer: 23086,
-    color: "Grey"
   },
   {
     name: "Hyundai Creta 1.6 SX Plus Petrol",
@@ -416,42 +371,6 @@ let cars = [
     color: "White"
   },
   {
-    name: "Maruti Suzuki Baleno Delta 1.2",
-    make: "Maruti Suzuki",
-    year: 2019,
-    mileage: "23.95 kmpl",
-    price: 605000,
-    kilometer: 27469,
-    color: "Silver"
-  },
-  {
-    name: "Maruti Suzuki Celerio VXi AMT",
-    make: "Maruti Suzuki",
-    year: 2016,
-    mileage: "12.55 kmpl",
-    price: 412000,
-    kilometer: 41058,
-    color: "Silver"
-  },
-  {
-    name: "Maruti Suzuki Ciaz VDi SHVS",
-    make: "Maruti Suzuki",
-    year: 2016,
-    mileage: "12.99 kmpl",
-    price: 625000,
-    kilometer: 51330,
-    color: "Brown"
-  },
-  {
-    name: "Maruti Suzuki Ciaz VXi",
-    make: "Maruti Suzuki",
-    year: 2015,
-    mileage: "14.8 kmpl",
-    price: 511000,
-    kilometer: 45969,
-    color: "Silver"
-  },
-  {
     name: "Hyundai Creta SX Plus 1.6 AT CRDI",
     make: "Hyundai",
     year: 2017,
@@ -569,51 +488,6 @@ let cars = [
     color: "Silver"
   },
   {
-    name: "Maruti Suzuki Vitara Brezza ZXi Plus",
-    make: "Maruti Suzuki",
-    year: 2021,
-    mileage: "21.27 kmpl",
-    price: 1044999,
-    kilometer: 24000,
-    color: "Silver"
-  },
-  {
-    name: "Maruti Suzuki Eeco 7 STR [2019-2020]",
-    make: "Maruti Suzuki",
-    year: 2019,
-    mileage: "26.59 kmpl",
-    price: 515000,
-    kilometer: 40310,
-    color: "Grey"
-  },
-  {
-    name: "Hyundai Grand i10 Asta AT 1.2 Kappa VTVT [2013-2016]",
-    make: "Hyundai",
-    year: 2015,
-    mileage: "16.95 kmpl",
-    price: 495000,
-    kilometer: 67492,
-    color: "Red"
-  },
-  {
-    name: "Maruti Suzuki Baleno Zeta 1.2",
-    make: "Maruti Suzuki",
-    year: 2020,
-    mileage: "21.4 kmpl",
-    price: 750000,
-    kilometer: 17465,
-    color: "White"
-  },
-  {
-    name: "Maruti Suzuki Swift Dzire VDi",
-    make: "Maruti Suzuki",
-    year: 2014,
-    mileage: "23.4 kmpl",
-    price: 580000,
-    kilometer: 23000,
-    color: "Silver"
-  },
-  {
     name: "Ford Ecosport Titanium Plus 1.5L TDCi",
     make: "Ford",
     year: 2018,
@@ -674,24 +548,6 @@ let cars = [
     mileage: "21.4 kmpl",
     price: 995000,
     kilometer: 26100,
-    color: "Silver"
-  },
-  {
-    name: "Maruti Suzuki Swift Dzire VDi",
-    make: "Maruti Suzuki",
-    year: 2014,
-    mileage: "28.4 kmpl",
-    price: 550000,
-    kilometer: 42000,
-    color: "White"
-  },
-  {
-    name: "Maruti Suzuki Swift Dzire ZDi",
-    make: "Maruti Suzuki",
-    year: 2016,
-    mileage: "28.4 kmpl",
-    price: 825000,
-    kilometer: 39000,
     color: "Silver"
   },
   {
@@ -766,24 +622,7 @@ let cars = [
     kilometer: 49000,
     color: "White"
   },
-  {
-    name: "Maruti Suzuki Ertiga VXI",
-    make: "Maruti Suzuki",
-    year: 2018,
-    mileage: "17.99 kmpl",
-    price: 750000,
-    kilometer: 38901,
-    color: "Grey"
-  },
-  {
-    name: "Maruti Suzuki Swift VDi",
-    make: "Maruti Suzuki",
-    year: 2015,
-    mileage: "22.9 kmpl",
-    price: 530000,
-    kilometer: 33000,
-    color: "Red"
-  },
+  
   {
     name: "Hyundai Verna 1.6 VTVT S AT",
     make: "Hyundai",
@@ -877,132 +716,6 @@ let cars = [
     color: "White"
   },
   {
-    name: "Maruti Suzuki Swift ZDi",
-    make: "Maruti Suzuki",
-    year: 2015,
-    mileage: "25.2 kmpl",
-    price: 690000,
-    kilometer: 35000,
-    color: "White"
-  },
-  {
-    name: "Maruti Suzuki Swift Dzire VDi",
-    make: "Maruti Suzuki",
-    year: 2017,
-    mileage: "28.4 kmpl",
-    price: 950000,
-    kilometer: 45000,
-    color: "Silver"
-  },
-  {
-    name: "Maruti Suzuki Swift Dzire VDi",
-    make: "Maruti Suzuki",
-    year: 2015,
-    mileage: "28.4 kmpl",
-    price: 675000,
-    kilometer: 37000,
-    color: "Silver"
-  },
-  {
-    name: "Hyundai i10 Magna",
-    make: "Hyundai",
-    year: 2010,
-    mileage: "20.36 kmpl",
-    price: 180000,
-    kilometer: 75000,
-    color: "Silver"
-  },
-  {
-    name: "Maruti Suzuki Swift VDi",
-    make: "Maruti Suzuki",
-    year: 2013,
-    mileage: "22.9 kmpl",
-    price: 490000,
-    kilometer: 48000,
-    color: "White"
-  },
-  {
-    name: "Maruti Suzuki Swift Dzire VXi",
-    make: "Maruti Suzuki",
-    year: 2015,
-    mileage: "20.65 kmpl",
-    price: 655000,
-    kilometer: 56000,
-    color: "Silver"
-  },
-  {
-    name: "Maruti Suzuki Swift VDi",
-    make: "Maruti Suzuki",
-    year: 2014,
-    mileage: "22.9 kmpl",
-    price: 530000,
-    kilometer: 52000,
-    color: "White"
-  },
-  {
-    name: "Maruti Suzuki Swift Dzire VXi",
-    make: "Maruti Suzuki",
-    year: 2015,
-    mileage: "20.65 kmpl",
-    price: 695000,
-    kilometer: 49000,
-    color: "Silver"
-  },
-  {
-    name: "Maruti Suzuki Swift Dzire ZDi",
-    make: "Maruti Suzuki",
-    year: 2016,
-    mileage: "28.4 kmpl",
-    price: 825000,
-    kilometer: 48000,
-    color: "Silver"
-  },
-  {
-    name: "Maruti Suzuki Swift ZDi",
-    make: "Maruti Suzuki",
-    year: 2015,
-    mileage: "25.2 kmpl",
-    price: 690000,
-    kilometer: 35000,
-    color: "White"
-  },
-  {
-    name: "Maruti Suzuki Swift Dzire VDi",
-    make: "Maruti Suzuki",
-    year: 2015,
-    mileage: "28.4 kmpl",
-    price: 675000,
-    kilometer: 37000,
-    color: "Silver"
-  },
-  {
-    name: "Hyundai i10 Magna",
-    make: "Hyundai",
-    year: 2010,
-    mileage: "20.36 kmpl",
-    price: 180000,
-    kilometer: 75000,
-    color: "Silver"
-  },
-  {
-    name: "Maruti Suzuki Swift VDi",
-    make: "Maruti Suzuki",
-    year: 2013,
-    mileage: "22.9 kmpl",
-    price: 490000,
-    kilometer: 48000,
-    color: "White"
-  },
-  {
-    name: "Maruti Suzuki Swift Dzire VXi",
-    make: "Maruti Suzuki",
-    year: 2015,
-    mileage: "20.65 kmpl",
-    price: 655000,
-    kilometer: 56000,
-    color: "Silver"
-  },
-  {
     name: "Hyundai Creta 1.6 SX",
     make: "Hyundai",
     year: 2015,
@@ -1075,24 +788,6 @@ let cars = [
     color: "Silver"
   },
   {
-    name: "Maruti Suzuki Swift Dzire VDi",
-    make: "Maruti Suzuki",
-    year: 2014,
-    mileage: "28.4 kmpl",
-    price: 550000,
-    kilometer: 42000,
-    color: "White"
-  },
-  {
-    name: "Maruti Suzuki Swift Dzire ZDi",
-    make: "Maruti Suzuki",
-    year: 2016,
-    mileage: "28.4 kmpl",
-    price: 825000,
-    kilometer: 39000,
-    color: "Silver"
-  },
-  {
     name: "Toyota Innova 2.5 GX BS IV 7 STR",
     make: "Toyota",
     year: 2015,
@@ -1174,15 +869,6 @@ let cars = [
     color: "Silver"
   },
   {
-    name: "Maruti Suzuki Eeco 7 STR [2019-2020]",
-    make: "Maruti Suzuki",
-    year: 2019,
-    mileage: "26.59 kmpl",
-    price: 515000,
-    kilometer: 40310,
-    color: "Grey"
-  },
-  {
     name: "Hyundai Grand i10 Asta AT 1.2 Kappa VTVT [2013-2016]",
     make: "Hyundai",
     year: 2015,
@@ -1190,24 +876,6 @@ let cars = [
     price: 495000,
     kilometer: 67492,
     color: "Red"
-  },
-  {
-    name: "Maruti Suzuki Baleno Zeta 1.2",
-    make: "Maruti Suzuki",
-    year: 2020,
-    mileage: "21.4 kmpl",
-    price: 750000,
-    kilometer: 17465,
-    color: "White"
-  },
-  {
-    name: "Maruti Suzuki Swift Dzire VDi",
-    make: "Maruti Suzuki",
-    year: 2014,
-    mileage: "23.4 kmpl",
-    price: 580000,
-    kilometer: 23000,
-    color: "Silver"
   },
   {
     name: "Ford Ecosport Titanium Plus 1.5L TDCi",
@@ -1275,24 +943,6 @@ let cars = [
     color: "Silver"
   },
   {
-    name: "Maruti Suzuki Swift Dzire VDi",
-    make: "Maruti Suzuki",
-    year: 2014,
-    mileage: "28.4 kmpl",
-    price: 550000,
-    kilometer: 42000,
-    color: "White"
-  },
-  {
-    name: "Maruti Suzuki Swift Dzire ZDi",
-    make: "Maruti Suzuki",
-    year: 2016,
-    mileage: "28.4 kmpl",
-    price: 825000,
-    kilometer: 39000,
-    color: "Silver"
-  },
-  {
     name: "Toyota Innova 2.5 GX BS IV 7 STR",
     make: "Toyota",
     year: 2015,
@@ -1365,15 +1015,6 @@ let cars = [
     color: "Silver"
   },
   {
-    name: "Maruti Suzuki Vitara Brezza ZXi Plus",
-    make: "Maruti Suzuki",
-    year: 2021,
-    mileage: "21.27 kmpl",
-    price: 1044999,
-    kilometer: 24000,
-    color: "Silver"
-  },
-  {
     name: "Maruti Suzuki Eeco 7 STR [2019-2020]",
     make: "Maruti Suzuki",
     year: 2019,
@@ -1390,24 +1031,6 @@ let cars = [
     price: 495000,
     kilometer: 67492,
     color: "Red"
-  },
-  {
-    name: "Maruti Suzuki Baleno Zeta 1.2",
-    make: "Maruti Suzuki",
-    year: 2020,
-    mileage: "21.4 kmpl",
-    price: 750000,
-    kilometer: 17465,
-    color: "White"
-  },
-  {
-    name: "Maruti Suzuki Swift Dzire VDi",
-    make: "Maruti Suzuki",
-    year: 2014,
-    mileage: "23.4 kmpl",
-    price: 580000,
-    kilometer: 23000,
-    color: "Silver"
   },
   {
     name: "Ford Ecosport Titanium Plus 1.5L TDCi",
@@ -1475,24 +1098,6 @@ let cars = [
     color: "Silver"
   },
   {
-    name: "Maruti Suzuki Swift Dzire VDi",
-    make: "Maruti Suzuki",
-    year: 2014,
-    mileage: "28.4 kmpl",
-    price: 550000,
-    kilometer: 42000,
-    color: "White"
-  },
-  {
-    name: "Maruti Suzuki Swift Dzire ZDi",
-    make: "Maruti Suzuki",
-    year: 2016,
-    mileage: "28.4 kmpl",
-    price: 825000,
-    kilometer: 39000,
-    color: "Silver"
-  },
-  {
     name: "Toyota Innova 2.5 GX BS IV 7 STR",
     make: "Toyota",
     year: 2015,
@@ -1574,15 +1179,6 @@ let cars = [
     color: "Silver"
   },
   {
-    name: "Maruti Suzuki Eeco 7 STR [2019-2020]",
-    make: "Maruti Suzuki",
-    year: 2019,
-    mileage: "26.59 kmpl",
-    price: 515000,
-    kilometer: 40310,
-    color: "Grey"
-  },
-  {
     name: "Hyundai Grand i10 Asta AT 1.2 Kappa VTVT [2013-2016]",
     make: "Hyundai",
     year: 2015,
@@ -1599,15 +1195,6 @@ let cars = [
     price: 750000,
     kilometer: 17465,
     color: "White"
-  },
-  {
-    name: "Maruti Suzuki Swift Dzire VDi",
-    make: "Maruti Suzuki",
-    year: 2014,
-    mileage: "23.4 kmpl",
-    price: 580000,
-    kilometer: 23000,
-    color: "Silver"
   },
   {
     name: "Ford Ecosport Titanium Plus 1.5L TDCi",
@@ -1673,24 +1260,6 @@ let cars = [
     color: "Silver"
   },
   {
-    name: "Maruti Suzuki Swift Dzire VDi",
-    make: "Maruti Suzuki",
-    year: 2014,
-    mileage: "28.4 kmpl",
-    price: 550000,
-    kilometer: 42000,
-    color: "White"
-  },
-  {
-    name: "Maruti Suzuki Swift Dzire ZDi",
-    make: "Maruti Suzuki",
-    year: 2016,
-    mileage: "28.4 kmpl",
-    price: 825000,
-    kilometer: 39000,
-    color: "Silver"
-  },
-  {
     name: "Toyota Innova 2.5 GX BS IV 7 STR",
     make: "Toyota",
     year: 2015,
@@ -1772,15 +1341,6 @@ let cars = [
     color: "Silver"
   },
   {
-    name: "Maruti Suzuki Eeco 7 STR [2019-2020]",
-    make: "Maruti Suzuki",
-    year: 2019,
-    mileage: "26.59 kmpl",
-    price: 515000,
-    kilometer: 40310,
-    color: "Grey"
-  },
-  {
     name: "Hyundai Grand i10 Asta AT 1.2 Kappa VTVT [2013-2016]",
     make: "Hyundai",
     year: 2015,
@@ -1797,15 +1357,6 @@ let cars = [
     price: 750000,
     kilometer: 17465,
     color: "White"
-  },
-  {
-    name: "Maruti Suzuki Swift Dzire VDi",
-    make: "Maruti Suzuki",
-    year: 2014,
-    mileage: "23.4 kmpl",
-    price: 580000,
-    kilometer: 23000,
-    color: "Silver"
   },
   {
     name: "Ford Ecosport Titanium Plus 1.5L TDCi",
@@ -1871,24 +1422,6 @@ let cars = [
     color: "Silver"
   },
   {
-    name: "Maruti Suzuki Swift Dzire VDi",
-    make: "Maruti Suzuki",
-    year: 2014,
-    mileage: "28.4 kmpl",
-    price: 550000,
-    kilometer: 42000,
-    color: "White"
-  },
-  {
-    name: "Maruti Suzuki Swift Dzire ZDi",
-    make: "Maruti Suzuki",
-    year: 2016,
-    mileage: "28.4 kmpl",
-    price: 825000,
-    kilometer: 39000,
-    color: "Silver"
-  },
-  {
     name: "Toyota Innova 2.5 GX BS IV 7 STR",
     make: "Toyota",
     year: 2015,
@@ -1988,24 +1521,6 @@ let cars = [
     color: "Red"
   },
   {
-    name: "Maruti Suzuki Baleno Zeta 1.2",
-    make: "Maruti Suzuki",
-    year: 2020,
-    mileage: "21.4 kmpl",
-    price: 750000,
-    kilometer: 17465,
-    color: "White"
-  },
-  {
-    name: "Maruti Suzuki Swift Dzire VDi",
-    make: "Maruti Suzuki",
-    year: 2014,
-    mileage: "23.4 kmpl",
-    price: 580000,
-    kilometer: 23000,
-    color: "Silver"
-  },
-  {
     name: "Ford Ecosport Titanium Plus 1.5L TDCi",
     make: "Ford",
     year: 2018,
@@ -2078,15 +1593,6 @@ let cars = [
     color: "White"
 
 
-  },
-  {
-    name: "Maruti Suzuki Swift Dzire ZDi",
-    make: "Maruti Suzuki",
-    year: 2016,
-    mileage: "28.4 kmpl",
-    price: 825000,
-    kilometer: 39000,
-    color: "Silver"
   },
   {
     name: "Toyota Innova 2.5 GX BS IV 7 STR",
@@ -2168,15 +1674,6 @@ let cars = [
     price: 1044999,
     kilometer: 24000,
     color: "Silver"
-  },
-  {
-    name: "Maruti Suzuki Eeco 7 STR [2019-2020]",
-    make: "Maruti Suzuki",
-    year: 2019,
-    mileage: "26.59 kmpl",
-    price: 515000,
-    kilometer: 40310,
-    color: "Grey"
   },
   {
     name: "Hyundai Grand i10 Asta AT 1.2 Kappa VTVT [2013-2016]",
@@ -2266,24 +1763,6 @@ let cars = [
     mileage: "21.4 kmpl",
     price: 995000,
     kilometer: 26100,
-    color: "Silver"
-  },
-  {
-    name: "Maruti Suzuki Swift Dzire VDi",
-    make: "Maruti Suzuki",
-    year: 2014,
-    mileage: "28.4 kmpl",
-    price: 550000,
-    kilometer: 42000,
-    color: "White"
-  },
-  {
-    name: "Maruti Suzuki Swift Dzire ZDi",
-    make: "Maruti Suzuki",
-    year: 2016,
-    mileage: "28.4 kmpl",
-    price: 825000,
-    kilometer: 39000,
     color: "Silver"
   },
   {
@@ -2370,15 +1849,6 @@ let cars = [
     color: "Silver"
   },
   {
-    name: "Maruti Suzuki Eeco 7 STR [2019-2020]",
-    make: "Maruti Suzuki",
-    year: 2019,
-    mileage: "26.59 kmpl",
-    price: 515000,
-    kilometer: 40310,
-    color: "Grey"
-  },
-  {
     name: "Hyundai Grand i10 Asta AT 1.2 Kappa VTVT [2013-2016]",
     make: "Hyundai",
     year: 2015,
@@ -2395,15 +1865,6 @@ let cars = [
     price: 750000,
     kilometer: 17465,
     color: "White"
-  },
-  {
-    name: "Maruti Suzuki Swift Dzire VDi",
-    make: "Maruti Suzuki",
-    year: 2014,
-    mileage: "23.4 kmpl",
-    price: 580000,
-    kilometer: 23000,
-    color: "Silver"
   },
   {
     name: "Ford Ecosport Titanium Plus 1.5L TDCi",

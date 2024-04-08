@@ -31,44 +31,116 @@ const EAST_LOS_HIGH_POSTER_URL = "https://static.wikia.nocookie.net/hulu/images/
 // This is an array of strings (cars models)
 import cars from "./car_data.js"
 
+let Cars = cars;
+let display_cars=[];
 // Your final submission should have much more data than this, and 
 // you should use more than just an array of strings to store it all.
-window.filterByMake = function(make) {
+function filterByMake(Cars, make) {
     if (make === "All") {
-        return cars;
+        return Cars;
     } else {
-        return cars.filter(function(car) {
+        return Cars.filter(function(car) {
             return car.make === make;
         });
     }
 }
 
+function filterByYear(Cars, min_year)
+{
+    min_year = parseInt(min_year);
+    let max_year = min_year+1;
+    let car1=[];
+    if (min_year === 2000 ) {
+        return Cars;
+    }
+    else {
+        for(let i = 0; i < Cars.length; i++)
+        {    
+            if(Cars[i].year >= min_year && Cars[i].year <= max_year)
+            {
+                car1.push(Cars[i]);
+            }  
+        }
+        return car1;
+    }
+}
+window.NotSorting = function()
+{
+    Cars = cars;
+    showCards(); 
+}
 
+window.SortbyYear = function() 
+{
+    // Use the sort() method to sort the cars array by their year property
+    Cars.sort(function(a, b) {
+        return a.year - b.year; // Sort in ascending order based on the year
+    });
+    showCards();
+}
+
+window.SortbyPrice = function() 
+{
+    // Use the sort() method to sort the cars array by their year property
+    Cars.sort(function(a, b) {
+        return a.price - b.price; // Sort in ascending order based on the year
+    });
+    showCards();
+}
+
+window.SortbyKilometer = function() 
+{
+    // Use the sort() method to sort the cars array by their year property
+    Cars.sort(function(a, b) {
+        return a.kilometer - b.kilometer; // Sort in ascending order based on the year
+    });
+    showCards();
+}
+// function SearchBar(Cars, input_value) {
+
+//     // Filter cars whose name contains the search string
+//     let car1;
+//     car1 = Cars.filter(function(car) {
+//         return car.name.toLowerCase().includes(input_value);
+//     });
+
+//     // Populate the car list with filtered data
+//     return car1;
+// }
+
+// Call filterCars function whenever there is a change in the search input
+document.getElementById("searchInput").addEventListener("input", showCards);
 // This function adds cards the page to display the data in the array
-function showCards() {
+function showCards() 
+{
     
     const cardContainer = document.getElementById("card-container");
     cardContainer.innerHTML = "";
     const templateCard = document.querySelector(".card");
 
+   
+    const button_clicked = document.querySelector(".Make-buttons")
+    const make = button_clicked.querySelector(".is-checked").textContent;
+    display_cars = filterByMake(Cars, make);
 
-    const button_clicked = document.querySelector(".Make-buttons");
-    const make = button_clicked.querySelector(".is-checked").innerText;
-    let filteredCars = filterByMake(make);
+    const button_clicked_year = document.querySelector(".Year-buttons .is-checked").getAttribute('data-range');
+    display_cars = filterByYear(display_cars,button_clicked_year);
 
-    for (let i = 0; i < filteredCars.length; i++) {
-        let car = filteredCars[i];
+    const searchInput = document.getElementById("searchInput");
+    const searchString = searchInput.value.toLowerCase();
+
+    // Filter cars whose name contains the search string
+    display_cars = display_cars.filter(function(car) {
+        return car.name.toLowerCase().includes(searchString);
+    });
+
+    for (let i = 0; i < display_cars.length; i++) 
+    {
+        let car = display_cars[i];
 
         // This part of the code doesn't scale very well! After you add your
         // own data, you'll need to do something totally different here.
-        let imageURL = "";
-        if (i == 0) {
-            imageURL = FRESH_PRINCE_URL;
-        } else if (i == 1) {
-            imageURL = CURB_POSTER_URL;
-        } else if (i == 2) {
-            imageURL = EAST_LOS_HIGH_POSTER_URL;
-        }
+        let imageURL = car.img;
 
         const nextCard = templateCard.cloneNode(true); // Copy the template card
         editCardContent(nextCard, car, imageURL); // Edit title and image
@@ -105,16 +177,43 @@ window.quoteAlert = function() {
     alert("I guess I can kiss heaven goodbye, because it got to be a sin to look this good!");
 }
 window.removeLastCard = function(){
-    cars.pop(); // Remove last item in titles array
+    console.log("Before removal:", display_cars);
+    let rmcar = display_cars[display_cars.length-1].name;
+    for(let i = 0; i < Cars.length;i++){
+        if(Cars[i].name === rmcar)
+             Cars.slice(i,1);
+    }
+     // Remove last item in titles array
+    console.log("After removal:", display_cars);
     showCards(); // Call showCards again to refresh
 }
 
 let makeButtons = document.querySelectorAll(".Make-buttons button");
 makeButtons.forEach(function(button) {
     button.addEventListener('click', function() {
-        document.querySelector('.is-checked').classList.remove('is-checked');
+        document.querySelector('.Make-buttons .is-checked').classList.remove('is-checked');
         button.classList.add('is-checked');
         console.log("hi how are you");
+        showCards(); // Call showCards again to refresh
+    });
+});
+
+let yearButtons = document.querySelectorAll(".Year-buttons button");
+yearButtons.forEach(function(button) {
+    button.addEventListener('click', function() {
+        document.querySelector('.Year-buttons .is-checked').classList.remove('is-checked');
+        button.classList.add('is-checked');
+        console.log("hi how are you2");
+        showCards(); // Call showCards again to refresh
+    });
+});
+
+let SortButtons = document.querySelectorAll(".Sort-button button");
+SortButtons.forEach(function(button) {
+    button.addEventListener('click', function() {
+        document.querySelector('.Sort-button .is-checked').classList.remove('is-checked');
+        button.classList.add('is-checked');
+        console.log("hi how are you3");
         showCards(); // Call showCards again to refresh
     });
 });
