@@ -22,14 +22,11 @@
  *    with the string you added to the array, but a broken image.
  * 
  */
-
-
-const FRESH_PRINCE_URL = "https://upload.wikimedia.org/wikipedia/en/3/33/Fresh_Prince_S1_DVD.jpg";
-const CURB_POSTER_URL = "https://m.media-amazon.com/images/M/MV5BZDY1ZGM4OGItMWMyNS00MDAyLWE2Y2MtZTFhMTU0MGI5ZDFlXkEyXkFqcGdeQXVyMDc5ODIzMw@@._V1_FMjpg_UX1000_.jpg";
-const EAST_LOS_HIGH_POSTER_URL = "https://static.wikia.nocookie.net/hulu/images/6/64/East_Los_High.jpg";
-
 // This is an array of strings (cars models)
 import cars from "./car_data.js"
+
+const carsPerPage = 6; // Number of cars to display per page
+let currentPage = 1; // Current page number
 
 let Cars = cars;
 let display_cars=[];
@@ -148,17 +145,78 @@ function showCards()
         return car.name.toLowerCase().includes(searchString);
     });
 
-    for (let i = 0; i < display_cars.length; i++) 
-    {
-        let car = display_cars[i];
+    // Calculate the start and end index of cars to display on the current page
+    const startIndex = (currentPage - 1) * carsPerPage;
+    const endIndex = startIndex + carsPerPage;
 
-        // This part of the code doesn't scale very well! After you add your
-        // own data, you'll need to do something totally different here.
+    // Slice the display_cars array to get cars for the current page
+    const carsForPage = display_cars.slice(startIndex, endIndex);
+
+    // Iterate over the cars for the current page and create cards
+    for (let i = 0; i < carsForPage.length; i++) {
+        let car = carsForPage[i];
         let imageURL = car.img;
-
         const nextCard = templateCard.cloneNode(true); // Copy the template card
         editCardContent(nextCard, car, imageURL); // Edit title and image
         cardContainer.appendChild(nextCard); // Add new card to the container
+    }
+
+    // Update page buttons
+    updatePageButtons();
+    updatePaginationButtons();
+}
+
+function updatePageButtons() {
+    const totalPages = Math.ceil(display_cars.length / carsPerPage);
+    const pageContainer = document.getElementById("page-container");
+    pageContainer.innerHTML = "";
+
+    // Create page buttons
+    for (let i = 1; i <= totalPages; i++) {
+        const pageButton = document.createElement("button");
+        pageButton.textContent = i;
+        pageButton.addEventListener("click", function() {
+            currentPage = i;
+            showCards();
+        });
+        if (i === currentPage) {
+            pageButton.classList.add("active");
+        }
+        pageContainer.appendChild(pageButton);
+    }
+}
+
+window.updatePaginationButtons=function() {
+    const totalPages = Math.ceil(display_cars.length / carsPerPage);
+
+    const prevButton = document.getElementById("prevPageButton");
+    const nextButton = document.getElementById("nextPageButton");
+
+    if (currentPage === 1) {
+        prevButton.style.display = "none";
+    } else {
+        prevButton.style.display = "inline-block";
+    }
+
+    if (currentPage === totalPages) {
+        nextButton.style.display = "none";
+    } else {
+        nextButton.style.display = "inline-block";
+    }
+}
+
+window.prevPage = function() {
+    if (currentPage > 1) {
+        currentPage--;
+        showCards();
+    }
+}
+
+window.nextPage = function() {
+    const totalPages = Math.ceil(display_cars.length / carsPerPage);
+    if (currentPage < totalPages) {
+        currentPage++;
+        showCards();
     }
 }
 
@@ -188,7 +246,10 @@ function editCardContent(card, newCar, newImageURL) {
 }
 
 // This calls the addCards() function when the page is first loaded
-document.addEventListener("DOMContentLoaded", showCards);
+document.addEventListener("DOMContentLoaded", function(){
+    showCards();
+    updatePaginationButtons();
+});
 
 window.quoteAlert = function() {
     console.log("Button Clicked!")
@@ -289,3 +350,26 @@ document.getElementById("homeLink").addEventListener("click", function(event) {
     event.preventDefault(); // Prevent the default behavior of scrolling to the anchor
     window.scrollTo({ top: 0, behavior: 'smooth' }); // Scroll to the top of the page smoothly
 });
+
+document.getElementById("FormLink").addEventListener("click", function(event) {
+    event.preventDefault(); // Prevent the default behavior of scrolling to the anchor
+    window.scrollTo({ top: document.body.scrollHeight , behavior: 'smooth' }); // Scroll to the buttom of the page smoothly
+});
+
+window.markAsSold =function(button) {
+    // Get the parent card element
+    const card = button.closest(".card");
+
+    // Find the index of the card in the display_cars array
+    const index = Array.from(card.parentNode.children).indexOf(card);
+
+    // Remove the card from the display
+    card.remove();
+
+    // Remove the corresponding car from the Cars array
+    const removedCar = display_cars.splice(index, 1)[0];
+
+    // Log the removed car
+    console.log("Sold Car:", removedCar);
+}
+

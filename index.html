@@ -21,6 +21,7 @@
       <nav class="navbar">
         <ul>
           <li><a id = "homeLink" href="#home">Home</a></li>
+          <li><a id = "FormLink" href="#bottom">Add Car</a></li>
           <li><a href="https://www.snapacademies.com/about">About</a></li>
           <li><a href="mailto:minaungpaing.pp@gmail.com">Contact</a></li>
         </ul>
@@ -29,7 +30,7 @@
 
 
     <div class="SearchBar">
-      <h1>Car Search</h1>
+      <h2>Car Search</h2>
       <input type="text" id="searchInput" placeholder="Search cars by name...">
       <ul id="carList">
           <!-- Car list will be dynamically populated here -->
@@ -37,7 +38,7 @@
     </div>
 
     <div class="Make-buttons">
-      <h1>Filter by Make</h1>
+      <h2>Filter by Make</h2>
       <button class = "btn is-checked" >All</button>
       <button class = "btn" >Honda</button>
       <button class = "btn" >Maruti Suzuki</button>
@@ -58,7 +59,7 @@
     </div>
 
     <div class="Year-buttons">
-      <h1>Filter by Year</h1>
+      <h2>Filter by Year</h2>
       <button class = "btn is-checked" data-range= 2000 >All</button>
       <button class = "btn" data-range=2006>2006-2007</button>
       <button class = "btn" data-range=2008>2008-2009</button>
@@ -71,7 +72,7 @@
     </div>
 
     <div class="Color-buttons">
-      <h1>Filter by Color</h1>
+      <h2>Filter by Color</h2>
       <button class = "btn is-checked">All</button>
       <button class = "btn" >White</button>
       <button class = "btn" >Black</button>
@@ -83,14 +84,22 @@
     </div>
 
     <div class="Sort-button">
-      <h1>Sort by</h1>
+      <h2>Sort by</h2>
       <button class = "btn is-checked" onclick="NotSorting()">All</button>
       <button class = "btn" onclick="SortbyYear()">Year</button>
       <button class = "btn" onclick="SortbyPrice()">Price</button>
       <button class = "btn" onclick="SortbyKilometer()">Kilometer</button>
     </div>
+    <div id="page-container">
+      <!-- Page buttons will be dynamically populated here -->
+    </div>
+    <div id="pagination-container">
 
-    
+      <button id="prevPageButton" onclick="prevPage()">Prev</button>
+      
+      <button id="nextPageButton" onclick="nextPage()">Next</button>
+      </div>
+  </div>
     <div id="card-container"></div>
 
     <div class="card" style="display: none">
@@ -106,6 +115,7 @@
           <li>Bullet Point 6</li>
 
         </ul>
+        <button class="sold-button" onclick="markAsSold(this)">Sell This Car</button>
       </div>
     </div>
 
