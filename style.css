@@ -145,6 +145,7 @@ header {
     justify-content: space-evenly;
     margin-left: 3vh;
     margin-right:3vh;
+    margin-top: 3vh;
 }
 
 .card {
@@ -153,7 +154,7 @@ header {
     border: 1px solid #eeeeee;
     border-radius: 5px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    margin-bottom: 2vh;
+    margin: 2vh;
 }
 
 .card-content li{

@@ -25,7 +25,7 @@
 // This is an array of strings (cars models)
 import cars from "./car_data.js"
 
-const carsPerPage = 6; // Number of cars to display per page
+const carsPerPage = 10; // Number of cars to display per page
 let currentPage = 1; // Current page number
 
 let Cars = cars;
