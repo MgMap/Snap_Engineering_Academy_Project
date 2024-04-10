@@ -36,3 +36,5 @@ This project is a web-based catalog of car models available in a showroom. Users
 - Sort the car models based on year, price, or kilometer.
 - Use the search bar to find specific car models by name.
 - Click on the "Add Car" link to add a new car model to the catalog.
+- Click "Sell the Car" to remove it from the catalog.
+- Click "Edit" to update the details of the car.
