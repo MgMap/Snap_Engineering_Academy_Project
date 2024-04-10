@@ -9,6 +9,7 @@ body {
     padding-bottom: 10px;
 }
 
+/* Nav bar Starts */
 header {
     position: fixed;
     top: 0;
@@ -118,7 +119,8 @@ header {
   margin-top:100px;
   margin-left:70px;
 }
-/* buttons */
+
+/*Filter buttons */
 .Make-buttons
 {
 
@@ -139,6 +141,7 @@ header {
   margin-left:70px;
 }
 
+/* Cards */
 #card-container {
     display: flex;
     flex-wrap: wrap;
@@ -179,27 +182,6 @@ header {
 
 /* cards end */
 
-.footer {
-    display: flex;
-    justify-content: center;
-    background-color: rgba(0, 0, 0, .3);
-    padding: 10px;
-}
-
-button {
-    text-align: center;
-    background-color: #666;
-    border: none;
-    padding-left: 10px;
-    padding-right: 10px;
-    height: 40px;
-    border-radius: 10px;
-    color: white;
-    font-size: 22px;
-    cursor: pointer;
-    margin-right: 5px;
-}
-
 /* CSS for SearchBar */
 .SearchBar {
   margin-top: 100px;
@@ -217,38 +199,49 @@ button {
   width: 400px;
 }
 
-/* CSS for buttons */
+/* CSS for Filter-buttons */
 .btn {
   margin: 5px;
-  padding: 10px 20px;
-  background-color: #007bff;
-  color: white;
-  border: none;
+  padding: 5px;
+  background-color: #ffffff;
+  color: rgb(0, 0, 0);
+  border: 1px solid #ccc;
   border-radius: 5px;
   cursor: pointer;
-  transition: background-color 0.3s ease;
 }
 .btn:hover {
-  background-color: #0056b3;
+  background-color: rgb(4, 85, 48);
+  color: white;
 }
 
 .is-checked {
-  background-color: #0056b3;
+  background-color: #ed3700;
+  color:#fff
 }
 
 /* footer and form */
-.footer
-{
-  background-color: #cfcfcf;
+.footer {
+  display: flex;
+  justify-content: center;
+  background-color: rgba(64, 59, 59, 0.3);
+  padding: 10px;
 }
 .footer h2{
   color:#000000;
 }
 
-button
-{
+/* Buttons on the cards */
+button {
+  text-align: center;
   background-color: #007bff;
-  margin: 5px;
+  border: none;
+  padding: 5px 10px;
+  height: 30px;
+  border-radius: 10px;
+  color: white;
+  font-size: 17px;
+  cursor: pointer;
+  margin: 5px 2px;
 }
 
 button:hover{
