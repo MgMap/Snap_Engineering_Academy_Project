@@ -37,7 +37,7 @@ let cars = [
     price: 1950000,
     kilometer: 69000,
     color: "White",
-    img: "https://stimg.cardekho.com/images/carexteriorimages/630x420/Toyota/Innova-Crysta/9612/1697698611076/front-left-side-47.jpg?imwidth=420&impolicy=resize"
+    img: "https://imgd.aeplcdn.com/664x374/n/cw/ec/140809/innova-crysta-exterior-right-front-three-quarter-2.png?isig=0&q=80"
   },
   {
     name: "Maruti Suzuki Ciaz ZXi",
