@@ -1,42 +1,38 @@
-# SEA Stage 2 - Data Catalog Project
+# Car Models Catalog
 
-This is the instructions, requirements, and starter for stage two of the Snap Engineering Academy application process.
+This project is a web-based catalog of car models available in a showroom. Users can browse through different car models, filter them based on various criteria such as make, year, and color, add new car models to the catalog, sell the car ,and also edit the existing car details.
 
-## Your Task:
+## Features
 
-<h1 align="center">Create a "catalog" website for something you're passionate about.</h1>
+- **Browse Car Models**: Users can view a list of available car models with details such as name, make, year, mileage, price, kilometer, color, and image.
+- **Filtering**: Users can filter car models based on make, year, and color to find the desired car models more easily.
+- **Sorting**: Car models can be sorted by year, price, and kilometer to facilitate browsing.
+- **Search**: Users can search for car models by name using the search bar.
+- **Pagination**: The list of car models is paginated to improve user experience.
+- **Add New Car**: Users can add new car models to the catalog by filling out a form.
+- **Sell Car**: Users can sell the car and gain income for the day removing the car from the catalog
+- **Edit Car Details**: Users can edit the details of the car if anything changed
 
-> [!NOTE]
-> If you have not used Github or programmed a website with JavaScript before, that's OK! Part of the challenge is figuring out things you're not familiar with.
+## Technologies Used
 
-## Requirements - Your Catalog Website Should...
+- HTML
+- CSS
+- JavaScript
 
-- Show off your understanding of basic data structures: arrays and objects.
-- Display a substantial amount of interesting data in a "Catalog"! You can look online for datasets or make your own. Your data should be easy to find in your source code, held either in variables defined at the top of scripts.js or imported from a file you added.
-- Have two or more features that “operate” on your data, modifying the data and how you display it. Data “operations” are things like filtering, searching, sorting, updating, adding, removing and so on. _Imagine what users would want to do while using your catalog website, and make it a feature!_
-- Look polished. Use HTML and CSS to customize how you display your data. Display your data thoughtfully, as it’s much more useful that way!
-- Be built from this starter code, though you can change anything you like. _The starter code shows a simple example of a data catalog website and introduces you to JS/html/css, but you should be making significant changes and improvements._
-- Be an original website. Please do not submit something you’ve already done for a school project, internship, or client. _Using online resources for reference and guidance is encouraged, but be a responsible developer and make sure you understand every line of code in your project._
+## Setup Instructions
 
-## Getting Started
+1. Clone the repository to your local machine using the following command:
 
-1. Create a Github account if you haven't already.
+   ```
+   git clone https://github.com/your-username/car-models-catalog.git
+   ```
 
-2. Click the green "Use as Template" button in the upper right corner, then choose the "create a new repository" option.  
-   a. Choose yourself as the owner  
-   b. Give your repository a name  
-   c. Click "Create Repository"
+2. Open the `index.html` file in your web browser to view the car catalog.
 
-3. Copy or Download the repository files to your own computer. There are many ways to do this, it's up to you!
+## Usage
 
-4. Start editing the website by using a text editor for the `index.html`, `style.css`, and `scripts.js` files. As you edit, preview your website by opening `index.html` with your web browser (double clicking `index.html` should open it in a web browser). When you're done, you should see something like this:
-
-<img height="300" alt="Screenshot 2024-03-27 at 12 51 33 PM" src="https://github.com/Snap-Engineering-Academy-2023/rn_lab1/assets/7607483/fdd57236-50fe-48ca-956d-d9b4b12db038">
-
-## Submitting
-
-1. Publish your website to the internet! You can use any method you like, but we recommend [Github Pages.](https://docs.github.com/en/pages/getting-started-with-github-pages/creating-a-github-pages-site#creating-your-site)
-
-2. Update your Github repository so it has the most recent version of your website's source code.
-
-3. Submit the URL to your published website and the link to your Github repository to the google form in your email.
+- Browse through the list of car models.
+- Use the filter options to narrow down the list based on make, year, and color.
+- Sort the car models based on year, price, or kilometer.
+- Use the search bar to find specific car models by name.
+- Click on the "Add Car" link to add a new car model to the catalog.
